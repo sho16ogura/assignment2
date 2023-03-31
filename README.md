@@ -7,7 +7,7 @@
 		* `fried` and `fired` returns `true`.
 		* `cheese` and `cheers` returns `false`.
 		* `dormitory` and `dirty room` returns `true`.
-2. Given an integer, x, and an array of integers, find two elements of the array that sum up to x. You are guaranteed that there will be an answer. 
+2. Given an integer, x, and an array of integers, find two indices of the array which correspond to elemenths that add up to x. You are guaranteed that there will be an answer. 
 	* Solve the problem in O(n^2) time.
 	* Solve the problem in O(n) time.
 	* Examples:
