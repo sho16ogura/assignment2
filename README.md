@@ -11,7 +11,7 @@
 	* Solve the problem in O(n^2) time.
 	* Solve the problem in O(n) time.
 	* Examples:
-		* `[3, 5, 3, 16, 6]` and `10` returns `[3,4]`.
+		* `[3, 5, 4, 16, 6]` and `10` returns `[2,4]`.
 		* `[5, 10, 15, 20, 25, 30, 35]` and `55` returns `[4,5]`.
 3. Given an integer array, duplicates are present in it in a way that all duplicates appear an even number of times except one which appears an odd number of times. Find that odd appearing element in linear time and without using any extra memory.
 	* Examples:
