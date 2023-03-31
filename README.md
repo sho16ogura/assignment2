@@ -23,7 +23,8 @@
  		*  `[-2, 5, 6, 1, -3, 4, -1, 8, -7, -4]` returns `false`.
 5. Return all pairs of integers that are reverses of each other from an array. Reverse pairs are defined as containing the same values at opposite indices, for example (3,9) and (9,3)
 	* Examples:
-		*
+		* `[[1,3],[8,3],[3,2],[2,3],[5,6],[3,1]]` returns `[[1,3],[3,1],[3,2],[2,3]]`
+		* `[[1,3],[2,4],[3,5],5,2][2,4],[2,3],[3,1]]` returns `[[1,3],[3,1]]`
 6. Given an unsorted array, reorder the array so that all occurrences of the same value are together. Clusters of elements should appear in the order that they are first seen in the array.
 	* Examples:
 		* `[2,5,1,2,3,3,1,5]` returns `[2,2,5,5,1,1,3,3]`.
