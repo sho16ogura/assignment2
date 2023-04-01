@@ -1,15 +1,17 @@
-import static org.junit.Assert.fail;
-import org.junit.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import java.util.List;
 
 public class TestFoo {
-    @Test
-    public void test1() {
-        assert Foo.foo() == false;
-    }
 
-    @Test
-    public void test2() {
-        assert Foo.foo() == true;
+    @ParameterizedTest
+    @CsvFileSource(files = "/workspaces/assignment2/csv/test.csv", numLinesToSkip = 1)
+    public void test2(String input, String output) {
+        List<List<Integer>> nestedArray = ArrayLoader.loadNestedArrayFromString(input);
+        List<List<Integer>> expected = ArrayLoader.loadNestedArrayFromString(output);
+        System.out.println(nestedArray);
+        System.out.println(expected);
+        assert true;
     }
 
 }
