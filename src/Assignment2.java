@@ -7,19 +7,25 @@ public class Assignment2{
         char[] aArr=aString.toCharArray();
         char[] bArr=bString.toCharArray();
 
+        int count=0;
         for(int i=0; i<aArr.length; i++){
             for(int j=0; j<aArr.length; j++){
+                System.out.println(aArr[i]+" "+bArr[j]);
                 if(aArr[i]==bArr[j]){
                     bArr[j]='\\';
-                    break;
+                    count++;
+                    continue;
                 }
             }
-            return false;
         }
-        return true;
+        if(count==aArr.length)
+            return true;
+        else
+            return false;
     }
 
     public static void main(String[] args){
-        System.out.println(isAnagram("fried","fired"));
+        Assignment2 a=new Assignment2();
+        System.out.println(a.isAnagram("fried","fired"));
     }
 }
